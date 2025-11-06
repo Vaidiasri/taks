@@ -31,5 +31,6 @@ Usage
 Notes
 - Ensure your Atlas IP access list allows your IP (or 0.0.0.0/0 for testing).
 - JWT secret is a placeholder. Set a strong `JWT_SECRET` in `api/.env`.
+- For deployment instructions, see [DEPLOYMENT.md](./DEPLOYMENT.md)
 
 

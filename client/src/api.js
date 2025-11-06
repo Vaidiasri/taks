@@ -1,5 +1,6 @@
 // Note: backend mounts routes under `/api`, so include it here to match server paths
-const API_BASE = 'http://localhost:5000/api'
+// Use environment variable in production, fallback to localhost for development
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000/api'
 
 // Generic helper to call API with/without token
 async function request(path, options = {}) {
