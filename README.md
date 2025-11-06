@@ -7,7 +7,11 @@ Overview
 Run locally (Windows-friendly)
 1) Backend (Node.js + MongoDB Atlas)
    - Create a MongoDB Atlas cluster and get a connection string.
-   - Copy `api/ENV_EXAMPLE.txt` to `api/.env` and fill `MONGODB_URI` and `JWT_SECRET`.
+   - Create a `.env` file in the `api/` directory with:
+     ```
+     MONGODB_URI=your_mongodb_connection_string_here
+     JWT_SECRET=your_jwt_secret_key_here
+     ```
    - Open a terminal in `api/`
    - Install deps: `npm install`
    - Start dev: `npm run dev` (or `npm start`)
